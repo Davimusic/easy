@@ -1,0 +1,138 @@
+html{
+  scroll-behavior: smooth !important;
+}
+
+/*div::-webkit-scrollbar, select::-webkit-scrollbar, textarea::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera 
+}
+
+div, select, textarea {
+  -ms-overflow-style: none;  /* IE and Edge 
+  scrollbar-width: none;  /* Firefox 
+}
+
+li{
+  margin: 0px;
+  padding: 0px;
+
+}*/
+
+
+.efectoMenu{
+  transition: 0.5s;
+}
+
+.efectoMenu:hover{
+  background-color: #3c8179;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.44); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.44);
+}
+
+
+
+/*.sobresalir{
+  z-index: 1000;
+}
+
+
+
+.sticky{
+  position: -webkit-sticky;  // required for Safari
+  position: sticky;
+  top: 0; // required as well.
+}
+
+.none{
+  display: none;
+}
+
+.ListaLimpia{
+  list-style-type:none;
+  list-style: none;
+  margin: 0;
+  text-decoration: none;
+  padding-top: 10px;
+  
+}
+
+
+*/.contenedorGaleria{
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+input, select{
+  background: #3c8179;
+  border:none;
+  cursor: pointer;
+  color: white;
+}
+
+
+.slide.esconder{
+  display: none;
+}
+
+.slide{
+  animation: aparecer 2s;
+}
+
+/*@keyframes aparecer {
+  from { opacity: 0; }
+  to {opacity: 1; }
+}
+
+.flex{
+    display: flex;
+}
+
+.block{
+  display: block;
+}
+
+.espacioEquilatero{
+  text-align: center;
+  justify-content: space-around;
+}*/
+
+
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 0;
+}
+
+nav ul ul li {
+  display: block;
+  width: 200px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}

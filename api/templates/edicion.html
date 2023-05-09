@@ -1,0 +1,17 @@
+{% extends 'base/base.html'%}
+
+{% block encabezadoBody %}
+        
+{% endblock %}
+
+{% block cuerpo %}
+        <body onload="arranque( '{{diccionario}}', '{{styleBody}}', '{{ubicacionActual}}', '{{menu}}', '{{footer}}', '{{cadenaPaletaColores}}', '{{TipoUsoFondoBody}}')">
+                <div id="editor"></div>
+                <div id="contenedorPadre" style="display: flex;">
+                        <div id="contenedorObjetosAbsolute"></div>
+                        <div id="root"></div> 
+                        <div id="porAhora" class="color1" style="background: white; width: 100%; min-width: 200px;  overflow-y: auto;"></div>
+                </div>
+        </body>
+{% endblock%}
+

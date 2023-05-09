@@ -1,0 +1,52 @@
+{% extends 'base/base.html'%}
+
+{% block cuerpo %}
+<body onload="mensajeLogin( '{{mensaje}}')" style="background: radial-gradient(circle, rgba(243,239,244,1) 18%, rgba(23,204,196,0.87718837535014) 100%);">
+    <div style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+        <div style="width: 100%; max-width: 400px; padding: 2rem; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px;">
+        <h2 id="tituloLogeo" style="text-align: center;">Iniciar sesión</h2>
+        <form method="post">
+            <input type="input" id="loginUso" name="loginUso" style="display: none;" value="usuarioExistente">
+            <div style="display: flex; flex-direction: column; margin-bottom: 1rem;">
+                <label style="margin-bottom: 0.5rem;">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required style="padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc; font-size: 1rem;">
+            </div>
+            <div style="display: flex; flex-direction: column; margin-bottom: 1rem;">
+                <label style="margin-bottom: 0.5rem;">Contraseña:</label>
+                <input type="password" id="password" name="password" required style="padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc; font-size: 1rem;">
+            </div>
+            <div id="contenedorContraseña2" style="display: none; flex-direction: column; margin-bottom: 1rem;">
+                <label style="margin-bottom: 0.5rem;">Repita la contraseña:</label>
+                <input type="password" id="password2" name="password2" style="padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc; font-size: 1rem;">
+            </div>
+            <button style="background: none; border: none; width: 50px; height: 50px; box-shadow: none;"><img id="botonLogeo" src="https://res.cloudinary.com/dplncudbq/image/upload/v1671160860/mias/descarga_uomlyb.png" style="width: 50px; height: 50px;  background-color:none; border: none;"></button>
+        </form>
+        <div style="margin-top: 1rem; text-align: center;">
+            ¿No tienes cuenta? <button onclick="accionLogin('nuevo')" style="box-shadow: none; border: none; background: none; color: #007bff; text-decoration: none; transition: color 0.3s ease;">Crear nueva cuenta</button>
+        </div>
+        </div>
+    </div>
+</body>   
+
+<script>
+    function accionLogin(acc){
+        if(acc == 'nuevo'){
+            document.getElementById('botonLogeo').innerText = 'Resgitrarse'
+            document.getElementById('tituloLogeo').innerText = 'Nuevo usuario'
+            document.getElementById('password2').required = 'true'
+            document.getElementById('contenedorContraseña2').style.display = 'flex'
+            document.getElementById('loginUso').value = 'usuarioNuevo'
+        }
+    }
+
+    function mensajeLogin(mensaje){
+        if(mensaje == 'error'){
+            alert('Error en el proceso de logeo, puede que este mal el correo y/o contraseña')
+        } else if(mensaje == 'contrasenasDiferentes'){
+            alert('las constraseñas proprocinadas no coinciden')
+        } else if(mensaje == 'correoExistente'){
+            alert('El correo proporcionado ya existe')
+        }
+    }
+</script>
+{% endblock%}

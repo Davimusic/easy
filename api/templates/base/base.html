@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/c.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css' ) }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link id="linkLetra" href='https://fonts.googleapis.com/css2?family=Dancing+Script' rel='stylesheet'>
+    {% block meta %}
+    {% endblock %}
+</head>
+
+    {% block cuerpo %}
+    {% endblock %}
+
+    <!--script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v16.0" nonce="6B98tCth"></!--script>
+    <script async src="//www.instagram.com/embed.js"></script -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bloque.js') }}"></script>
+    
+    
+    <!--arranque-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/arranque/arranque.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/arranque/variablesGlobalesArranque.js') }}"></script>
+    
+
+    <!--eventos-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/eventos/eventoUnico.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/eventos/rehabilitarUsoEventos.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/eventos/eventoScroll.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/eventos/crearNuevoEvento.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/eventos/retornarOpcionesEventos.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/eventos/actualizarRequerimintosEventos.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/eventos/retornarOpcionesDetalladasEventos.js') }}"></script>
+    
+
+    <!--dragAndDrop-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/dragAndDrop/variablesGlobalesDragAndDrop.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/dragAndDrop/retornarPosicionDiccionario.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/dragAndDrop/accionDagAndDrop.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/dragAndDrop/cambioUbicacion.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/dragAndDrop/activarBanderaCambioUbicacion.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/dragAndDrop/renderizarDicc.js') }}"></script>
+
+    
+
+
+
+    <!--modal-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modal/modal.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modal/retornarModalObjetos.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modal/retornarEventosEdicionModal.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modal/mostrarModalOpcionesBotonesEdicion.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modal/modalAtributos.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modal/abirOpcionEdicionModal.js') }}"></script>
+    
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionDom/prueba.js') }}"></script>
+
+
+    <!--microComponenetes-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/codigoEmbebido.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/espacio.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/footer.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/imagen.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/mapa.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/menu.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/negrita.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/section.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/slideGalery.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/video.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/texto.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/microComponenetes/texto.js') }}"></script> 
+
+
+    <!--traductores-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/traductores/traducirNombresObjetos.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/traductores/traducirMenuOFooter.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/traductores/traducirColoraRBG.js') }}"></script> 
+
+
+    <!--herramientasMultiproposito-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/anchoVentana.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/resaltarObjeto.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/quitarComasDeArreglo.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/buscarCaracterParaReemplazar.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/separarTextoPorPalabras.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/retornarDecicionResponsiva.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/retornarValidarAccionesDeEdicion.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/eliminarContenido.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/log.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/alertaAntesDeSalir.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/wait.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/evaluar.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/separarPalabra.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/hexToRgba.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/herramientasMultiproposito/RgbaToHex.js') }}"></script>
+
+
+    <!--actualizaciones-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/actualizaciones/actualizarTipoDeLetra.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/actualizaciones/actualizarFondoImagenContenedorBody.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/actualizaciones/actualizarFondoBody.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/actualizaciones/actualizarColoresClases.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/actualizaciones/actualizarVariablesStyleBody.js') }}"></script>
+
+
+    <!--renderizacionTableroEdicion-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionTableroEdicion/retornarBotonesEdicion.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionTableroEdicion/retornarModalBotonesEdicion.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionTableroEdicion/inyectarPaletaColorMostrador.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionTableroEdicion/retornarCambioFondoContenedorBody.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionTableroEdicion/edicionFondoBody.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionTableroEdicion/retornarBotonDetenerOnclickModal.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionTableroEdicion/retornarBotonDragAndDrop.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionTableroEdicion/actBotonEditar.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionTableroEdicion/retornarTipoDeLetra.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/renderizacionTableroEdicion/DetenerOnclickModal.js') }}"></script>
+
+
+    <!--animaciones-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/rotar.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/sombra.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/displayObjeto.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/rotar3d.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/cambiarColor.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/cambiarColorLetra.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/cambiarImagen.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/opacidad.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/desplazar.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/activarEventosScroll.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/activarModalObjeto.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animaciones/border.js') }}"></script>
+    
+    
+
+
+
+
+
+
+    <!--edicionObjetos-->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/variablesGlobalesEdicionObjetos.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/retornarRutaObjetoFooter.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/reubicarMenuYFooter.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/retornarObjecto.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/activarInputs.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/activarInput.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/agregarSaltosDeLinea.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/quitarSaltosDeLinea.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/retornarBotonCrear.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/inyectarCodigoEmbebido.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/borrarObjeto.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/decidirAccionDetallaOpciones.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/crearNuevoObjeto.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/retornarArregloSelectStyle.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/edicionObjetos/retornarValorSelectStyle.js') }}"></script>
+    
+    
+    
+    
+    
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/slideGalery/slideGalery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/menu/menu.js') }}"></script>
+</html>

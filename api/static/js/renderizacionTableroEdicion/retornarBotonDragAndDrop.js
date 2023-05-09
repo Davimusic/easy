@@ -1,0 +1,3 @@
+function retornarBotonDragAndDrop(){
+    return `<button type="button" id='cambiarDragAndDrop' onclick="eventoUnico(this.id, 'accionDagAndDrop()')" style='border-radius: 50%; color: white; background: red; width: 25px; height: 25px; border: none;'><img style="width: 23px; height: 23px;" src="https://res.cloudinary.com/dplncudbq/image/upload/v1677804690/mias/flecha_xf9kw1.png" alt="editar pagina web"></button>`
+}

@@ -1,0 +1,14 @@
+let historialStyleBody = []
+let tipoDeletra = 'Open Sans'
+let fondoContenedorColorBody = '#ffffff'
+let fondoContenedorImagenBody = ''
+let  transparenciaFondoContenedorBody = 10
+let congelarActualizacionPantalla = 'no'
+let medidaAnchoPantallaPadre = 100
+let historial = []
+let numHistorialActual = 0
+let paletaDeColores = [['rgba(120, 40, 70, 1)', 'color1'], ['rgba(100, 100, 100, 1)', 'color2'], ['rgba(60, 100, 60, 1)', 'color3'], ['rgba(45, 80, 100, 1)', 'color4'], ['rgba(10, 100, 60, 1)', 'color5'], ['rgba(20, 30, 40, 1)', 'color6'], ['rgba(250, 250, 0, 1)', 'color7']]
+let TipoUsoFondoBody = 'color'
+let ubicacionActual = ''
+let colorBotonEdicion = ''
+let habilitarUsoEvento = true
